@@ -1,14 +1,26 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Next.js",
+  name: "Pizza Pint",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "www.pizzapoint.com",
   mainNav: [
     {
       title: "Home",
       href: "/",
     },
+    {
+      title: "Products",
+      href: "/products",
+    },
+    {
+      title: "Cart",
+      href: "/cart",
+    },
+    // {
+    //   title: "Account",
+    //   href: "/account",
+    // },
   ],
   links: {
     twitter: "https://twitter.com/shadcn",
