@@ -32,7 +32,7 @@ const RegisterForm = () => {
     <CardWrapper
       headerLable="Welcome to Pizza Point"
       backbuttonLable="Already have an account?"
-      backButtonHref="/"
+      backButtonHref="/signin"
       showSocial
     >
       <Form {...form}>

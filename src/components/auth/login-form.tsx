@@ -31,7 +31,7 @@ const LoginForm = () => {
     <CardWrapper
       headerLable="Welcome Back"
       backbuttonLable="Don't have an account?"
-      backButtonHref="/signin"
+      backButtonHref="/signup"
       showSocial
     >
       <Form {...form}>
