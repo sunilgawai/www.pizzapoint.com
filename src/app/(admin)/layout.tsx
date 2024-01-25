@@ -1,4 +1,4 @@
-import { SiteHeader } from "@/components/site-header";
+import SiteNavbar from "@/components/site-navbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,10 +15,11 @@ export default function DashboardLayout({
         <>
             {/* <div className="flex h-screen overflow-hidden"> */}
             {/* <div className="flex min-h-full flex-col pt-16 "> */}
-            <div className="container grid items-center gap-6 pb-4 md:py-10">
-                {/* <Sidebar /> */}
-                {/* sidebar */}
-                <main className="w-full">{children}</main>
+            {/* <div className="container grid items-center gap-6 pb-4 md:py-10"> */}
+            <div className="container flex h-screen overflow-hidden">
+                {/* side navigation  */}
+                <SiteNavbar />
+                <main className="w-full h-screen">{children}</main>
             </div>
         </>
     );
