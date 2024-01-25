@@ -1,5 +1,3 @@
-// import Header from "@/components/layout/header";
-// import Sidebar from "@/components/layout/sidebar";
 import { SiteHeader } from "@/components/site-header";
 import type { Metadata } from "next";
 
@@ -17,10 +15,10 @@ export default function DashboardLayout({
         <>
             {/* <div className="flex h-screen overflow-hidden"> */}
             {/* <div className="flex min-h-full flex-col pt-16 "> */}
-            <div className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+            <div className="container grid items-center gap-6 pb-4 md:py-10">
                 {/* <Sidebar /> */}
-                sidebar
-                <main className="w-full pt-16">{children}</main>
+                {/* sidebar */}
+                <main className="w-full">{children}</main>
             </div>
         </>
     );
