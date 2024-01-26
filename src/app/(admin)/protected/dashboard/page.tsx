@@ -1,4 +1,4 @@
-import CalendarDateRangePicker from "@/components/date-range-picker";
+import CalendarDateRangePicker from "@/components/common/date-range-picker";
 import Overview from "@/components/admin/overview";
 import RecentSales from "@/components/admin/recent-sales";
 import { Button } from "@/components/ui/button";

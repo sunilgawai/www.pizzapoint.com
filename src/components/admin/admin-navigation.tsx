@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Inbox, LucideIcon, User, User2Icon, LayoutDashboardIcon, Settings, Notebook, User2, Accessibility, ListOrdered, MenuIcon, ShoppingBag, UsersRoundIcon } from "lucide-react"
+import { LucideIcon, LayoutDashboardIcon, Settings, Notebook, User2, MenuIcon, ShoppingBag, UsersRoundIcon, ListOrdered, LockIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
@@ -10,10 +10,7 @@ import {
     TooltipContent,
     TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Icons } from "../icons"
-import { LucideProps } from "lucide-react"
-import { ForwardRefExoticComponent, RefAttributes } from "react";
-import { DashboardIcon, LockClosedIcon } from "@radix-ui/react-icons"
+import { LockClosedIcon } from "@radix-ui/react-icons"
 
 interface NavProps {
     isCollapsed?: boolean
@@ -71,7 +68,7 @@ const links: ILinks[] = [
     {
         title: "Role",
         label: "9",
-        icon: LockClosedIcon,
+        icon: LockIcon,
         variant: "ghost",
     },
     {

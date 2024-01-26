@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import React from 'react'
-import { DashboardNav } from './admin/dashboardNav';
+import { DashboardNav } from '../admin/dashboardNav';
 import { navItems } from '@/constants/data';
 
 const SiteNavbar = () => {

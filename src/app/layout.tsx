@@ -4,9 +4,9 @@ import { Metadata, Viewport } from "next"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
-import { SiteHeader } from "@/components/site-header"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { ThemeProvider } from "@/components/theme-provider"
+import { SiteHeader } from "@/components/common/site-header"
+import { TailwindIndicator } from "@/components/common/tailwind-indicator"
+import { ThemeProvider } from "@/components/common/theme-provider"
 export const vieport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
