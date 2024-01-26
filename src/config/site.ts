@@ -16,6 +16,14 @@ export const siteConfig = {
     {
       title: "Cart",
       href: "/cart",
+    },
+    {
+      title: "Wishlist",
+      href: "/wishlist",
+    },
+    {
+      title: "Account",
+      href: "/account",
     }
   ],
   links: {

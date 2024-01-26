@@ -18,9 +18,19 @@ export function SiteHeader() {
           <MainNav items={siteConfig.mainNav} />
           <nav className="flex items-center space-x-1">
             <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noreferrer"
+              href={'/wishlist'}
+            >
+              <div
+                className={buttonVariants({
+                  size: "icon",
+                  variant: "outline",
+                })}
+              >
+                <Icons.wishlist className="h-5 w-5" />
+              </div>
+            </Link>
+            <Link
+              href={'/cart'}
             >
               <div
                 className={buttonVariants({
@@ -28,11 +38,22 @@ export function SiteHeader() {
                   variant: "ghost",
                 })}
               >
-                <Icons.user className="h-5 w-5 fill-current" />
-                <span className="sr-only">Twitter</span>
+                <Icons.cart className="h-5 w-5" />
               </div>
             </Link>
-            <ThemeToggle />
+            <Link
+              href={'/account'}
+            >
+              <div
+                className={buttonVariants({
+                  size: "icon",
+                  variant: "ghost",
+                })}
+              >
+                <Icons.user className="h-5 w-5" />
+              </div>
+            </Link>
+            {/* <ThemeToggle /> */}
           </nav>
         </div>
       </div>
