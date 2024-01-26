@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { Table, TableBody, TableCell, TableFooter, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import React from 'react'
 
 const Categories = () => {
@@ -16,9 +17,60 @@ const Categories = () => {
         </div>
 
         {/* Main Area  */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          
-        </div>
+        {/* <div className="w-full grid gap-4 md:grid-cols-2 lg:grid-cols-4"> */}
+        <Table>
+          <TableHeader>Categories</TableHeader>
+          <TableBody>
+            <TableHead>
+              <TableHead>
+                <TableCell>Category ID</TableCell>
+              </TableHead>
+              <TableHead>
+                <TableCell>Category Name</TableCell>
+              </TableHead>
+              <TableHead>
+                <TableCell>Category Status</TableCell>
+              </TableHead>
+              <TableHead>
+                <TableCell>Action</TableCell>
+              </TableHead>
+            </TableHead>
+            <TableRow>
+              <TableCell>1</TableCell>
+              <TableCell>Sweet</TableCell>
+              <TableCell>Active</TableCell>
+              <TableCell>
+                <Button>...</Button>
+              </TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>1</TableCell>
+              <TableCell>Sweet</TableCell>
+              <TableCell>Active</TableCell>
+              <TableCell>
+                <Button>...</Button>
+              </TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>1</TableCell>
+              <TableCell>Sweet</TableCell>
+              <TableCell>Active</TableCell>
+              <TableCell>
+                <Button>...</Button>
+              </TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>1</TableCell>
+              <TableCell>Sweet</TableCell>
+              <TableCell>Active</TableCell>
+              <TableCell>
+                <Button>...</Button>
+              </TableCell>
+            </TableRow>
+          </TableBody>
+          {/* <TableFooter>Categories footer</TableFooter> */}
+        </Table>
+        {/* </div> */}
       </div>
     </ScrollArea>
   )
