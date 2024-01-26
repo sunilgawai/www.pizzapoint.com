@@ -1,5 +1,3 @@
-import SiteNavbar from "@/components/site-navbar";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
