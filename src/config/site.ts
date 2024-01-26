@@ -1,5 +1,14 @@
-export type SiteConfig = typeof siteConfig
+// export type SiteConfig = typeof siteConfig
 
+import { NavItem } from "@/types";
+
+interface SiteConfig {
+  name: string;
+  description: string;
+  mainNav: NavItem,
+  links: any[],
+  adminNavigation: NavItem[]
+}
 export const siteConfig = {
   name: "Pizza Point",
   description:
@@ -68,5 +77,47 @@ export const siteConfig = {
       icon: "login",
       label: "login",
     },
+  ],
+
+  // Admin
+  adminNavigation: [
+    {
+      title: "Dashboard",
+      href: "/dashboard",
+      icon: "dashboard",
+      label: "Dashboard",
+    },
+    {
+      title: "Users",
+      href: "/users",
+      icon: "user",
+      label: "user",
+    },
+    {
+      title: "Employees",
+      href: "/employees",
+      icon: "employee",
+      label: "employee",
+    },
+    {
+      title: "todos",
+      href: "/todos",
+      icon: "kanban",
+      label: "kanban",
+    },
+    // {
+    //   DASHBOARD: "",
+    //   CATEGORIES: {
+    //     INDEX: "categories",
+    //     NEW: "categories/new"
+    //   },
+    //   DIMENTIONS: "",
+    //   PRODUCTS: "",
+    //   USER: "",
+    //   ROLE: "",
+    //   EMPLOYEES: "",
+    //   PROFILE: "",
+    //   KANBAN: "",
+    // }
   ]
 }
