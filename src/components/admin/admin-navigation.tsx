@@ -1,5 +1,4 @@
 "use client"
-
 import Link from "next/link"
 import { LucideIcon, LayoutDashboardIcon, Settings, Notebook, User2, MenuIcon, ShoppingBag, UsersRoundIcon, ListOrdered, LockIcon } from "lucide-react"
 
@@ -10,7 +9,6 @@ import {
     TooltipContent,
     TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { LockClosedIcon } from "@radix-ui/react-icons"
 
 interface NavProps {
     isCollapsed?: boolean
@@ -24,6 +22,7 @@ interface NavProps {
 
 interface ILinks {
     title: string
+    href: string
     label?: string
     icon: LucideIcon
     variant: "default" | "ghost"
@@ -31,54 +30,63 @@ interface ILinks {
 const links: ILinks[] = [
     {
         title: "Dashboard",
+        href: "/dashboard",
         label: "128",
         icon: LayoutDashboardIcon,
         variant: "default",
     },
     {
         title: "Orders",
+        href: "/orders",
         label: "128",
         icon: ListOrdered,
         variant: "ghost",
     },
     {
         title: "Categories",
+        href: "/categories",
         label: "128",
         icon: MenuIcon,
         variant: "ghost",
     },
     {
         title: "Products",
+        href: "/products",
         label: "128",
         icon: ShoppingBag,
         variant: "ghost",
     },
     {
         title: "Customers",
+        href: "/customers",
         label: "128",
         icon: UsersRoundIcon,
         variant: "ghost",
     },
     {
         title: "Users",
+        href: "/users",
         label: "9",
         icon: User2,
         variant: "ghost",
     },
     {
         title: "Role",
+        href: "/roles",
         label: "9",
         icon: LockIcon,
         variant: "ghost",
     },
     {
         title: "Reports",
+        href: "/reports",
         label: "128",
         icon: Notebook,
         variant: "ghost",
     },
     {
         title: "Settings",
+        href: "/settings",
         label: "",
         icon: Settings,
         variant: "ghost",
@@ -98,7 +106,7 @@ const AdminNavigation = ({ isCollapsed }: NavProps) => {
                             <Tooltip key={index} delayDuration={0}>
                                 <TooltipTrigger asChild>
                                     <Link
-                                        href="#"
+                                        href={link.href}
                                         className={cn(
                                             buttonVariants({ variant: link.variant, size: "icon" }),
                                             "h-9 w-9",
@@ -122,7 +130,7 @@ const AdminNavigation = ({ isCollapsed }: NavProps) => {
                         ) : (
                             <Link
                                 key={index}
-                                href="#"
+                                href={link.href}
                                 className={cn(
                                     buttonVariants({ variant: link.variant, size: "sm" }),
                                     link.variant === "default" &&
