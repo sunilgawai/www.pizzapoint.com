@@ -1,6 +1,6 @@
 import CalendarDateRangePicker from "@/components/date-range-picker";
-import Overview from "@/components/overview";
-import RecentSales from "@/components/recent-sales";
+import Overview from "@/components/admin/overview";
+import RecentSales from "@/components/admin/recent-sales";
 import { Button } from "@/components/ui/button";
 import {
     Card,
@@ -147,9 +147,9 @@ const DashboardPage = () => {
                             </Card>
                             <Card className="col-span-4 md:col-span-3">
                                 <CardHeader>
-                                    <CardTitle>Recent Sales</CardTitle>
+                                    <CardTitle>Recent Orders</CardTitle>
                                     <CardDescription>
-                                        You made 265 sales this month.
+                                        You received 265 orders this month.
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
