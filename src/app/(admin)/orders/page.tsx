@@ -1,24 +1,29 @@
+import BreadCrumb from '@/components/common/breadcrumb';
+import UsersTable from '@/components/tables/users-table';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { users } from '@/constants/data';
+import { Plus } from 'lucide-react';
 import React from 'react'
+
+const breadcrumbItems = [{ title: "Orders", link: "/dashboard/orders" }];
 
 const Orders = () => {
   return (
     <ScrollArea>
       <div className='flex-1 space-y-4 p-4 md:p-8 pt-6'>
         <div className="flex items-center justify-between space-y-2">
-          <h2 className="text-3xl font-semibold tracking-tight">
-            Your orders
-          </h2>
+          {/* Breadcrumb  */}
+          <BreadCrumb items={breadcrumbItems} />
           <div className="hidden md:flex items-center space-x-2">
-            <Button>New Category</Button>
+            <Button className='text-md'>
+              <Plus className='mr-2' />
+              New Orders
+            </Button>
           </div>
         </div>
-
         {/* Main Area  */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-
-        </div>
+        <UsersTable data={users} />
       </div>
     </ScrollArea>
   )

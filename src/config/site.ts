@@ -23,6 +23,10 @@ export const siteConfig = {
       href: "/menus",
     },
     {
+      title: "Offers",
+      href: "/offers",
+    },
+    {
       title: "Cart",
       href: "/cart",
     },
