@@ -10,7 +10,9 @@ import { useToast } from "./ui/use-toast";
 
 interface ImageUploadProps {
     onChange?: any;
+    // @ts-ignore
     onRemove: (value: UploadFileResponse[]) => void;
+    // @ts-ignore
     value: UploadFileResponse[];
 }
 
@@ -25,6 +27,7 @@ const FileUpload = ({
         let filteredFiles = files.filter((item) => item.key !== key);
         onRemove(filteredFiles);
     };
+    // @ts-ignore
     const onUpdateFile = (newFiles: UploadFileResponse[]) => {
         onChange([...value, ...newFiles]);
     };
@@ -60,6 +63,7 @@ const FileUpload = ({
             </div>
             <div>
                 {value && value.length < IMG_MAX_LIMIT && (
+                    // @ts-ignore
                     <UploadDropzone<OurFileRouter>
                         className="dark:bg-zinc-800 h-52 py-2 ut-label:text-sm ut-allowed-content:ut-uploading:text-red-300"
                         endpoint="imageUploader"
