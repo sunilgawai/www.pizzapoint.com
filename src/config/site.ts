@@ -123,5 +123,93 @@ export const siteConfig = {
     //   PROFILE: "",
     //   KANBAN: "",
     // }
+  ],
+
+
+  categories_list: [
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Bowls",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Superbowls",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Noodles",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Thalis",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Appetizers",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Appetizers",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Wraps",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Appetizers",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Sandwiches",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Burgers and More",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "All day breakfast",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Keto Specials",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Soups and Salads",
+      isActive: true
+    },
+    {
+      id: "1",
+      image: "empty_cart.webp",
+      name: "Desserts & Beverages",
+      isActive: true
+    },
   ]
 }

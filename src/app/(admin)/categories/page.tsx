@@ -1,8 +1,8 @@
 import BreadCrumb from '@/components/common/breadcrumb';
-import UsersTable from '@/components/tables/users-table';
+import CategoryTable from '@/components/tables/category-table';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { users } from '@/constants/data';
+import { siteConfig } from '@/config/site';
 import { Plus } from "lucide-react";
 import React from 'react'
 
@@ -23,7 +23,7 @@ const CategoriesPage = () => {
           </div>
         </div>
         {/* Main Area  */}
-        <UsersTable data={users} />
+        <CategoryTable data={siteConfig.categories_list} />
       </div>
     </ScrollArea>
   )
