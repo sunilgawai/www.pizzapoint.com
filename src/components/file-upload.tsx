@@ -74,7 +74,7 @@ const FileUpload = ({
                                     return (
                                         <>
                                             <p className="mt-2 text-sm text-slate-400 animate-pulse">
-                                                Img Uploading...
+                                                Image Uploading...
                                             </p>
                                         </>
                                     );
@@ -86,6 +86,7 @@ const FileUpload = ({
                             if (data) {
                                 onUpdateFile(data);
                             }
+                            console.log("complete", res)
                         }}
                         onUploadError={(error: Error) => {
                             toast({
