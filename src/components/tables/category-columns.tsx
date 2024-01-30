@@ -30,20 +30,24 @@ export const category_columns: ColumnDef<User>[] = [
         header: "Image",
         cell: ({ cell }) => {
             // @ts-ignore
-            console.log("image", cell.getValue())
-            return <Image src={"/" + cell.getValue() as string} alt="category image" width={60} height={40} />
+            return <Image src={"/" + cell.getValue() as string} alt="category image" width={60} height={60} />
         },
     },
     {
         accessorKey: "name",
         header: "NAME",
+        cell({ renderValue }) {
+            return <div className="font-semibold text-sm ">{renderValue<string>()}</div>
+        },
     },
     {
-        accessorKey: "status",
+        accessorKey: "isActive",
         header: "STATUS",
-        cell: ({ cell }) => (
-            <div>{cell.getValue() ? "Active" : "Inactive"}</div>
-        ),
+        cell: ({ cell }) => {
+            console.log("STATUS", cell.getValue())
+            // return <div>{cell.getValue() ? "Active" : "Inactive"}</div>
+            return cell.getValue() ? <div className="bg-green-500 text-white font-semibold py-1 px-4 rounded-md text-center w-fit">Active</div> : <div className="bg-red-500 text-white font-semibold py-1 px-2 rounded-md text-center w-fit">Disabled</div>
+        },
     },
     {
         id: "actions",

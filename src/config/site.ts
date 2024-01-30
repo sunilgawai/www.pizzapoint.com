@@ -197,7 +197,7 @@ export const siteConfig = {
       id: "1",
       image: "empty_cart.webp",
       name: "Keto Specials",
-      isActive: true
+      isActive: false
     },
     {
       id: "1",
