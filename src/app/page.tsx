@@ -4,6 +4,8 @@ import { menus } from "@/config/menus"
 import FilterMenu from "@/components/filter-menu"
 import { Toggle } from "@/components/ui/toggle";
 import { SortDescIcon, FilterIcon } from "lucide-react"
+import { Separator } from "@/components/ui/separator";
+import Product from "@/components/common/product";
 
 export default function IndexPage() {
   return (
@@ -11,7 +13,7 @@ export default function IndexPage() {
       <div className="grid place-items-center gap-2">
         <MainCarousel />
       </div>
-      <div className="flex flex-col gap-4 p-1 border border-x-0 border-y-0 border-t-2">
+      <div className="flex flex-col gap-4 p-1 border border-pink-400 border-x-0 border-y-0 border-t-2">
         <div className="flex-1 items-center justify-between p-1">
           <h1 className="text-2xl font-serif mb-2">Categories</h1>
           <div className="flex justify-center items-center gap-4 text-lg">
@@ -30,9 +32,19 @@ export default function IndexPage() {
             </Toggle>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-between">
+        <Separator />
+        <div className="grid lg:grid-cols-6 gap-2">
           <FilterMenu isCollapsed={false} links={menus} />
-          Menus
+          <div className="grid grid-cols-4 gap-4 gap-y-8 col-span-5">
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+          </div>
         </div>
       </div>
     </section>
