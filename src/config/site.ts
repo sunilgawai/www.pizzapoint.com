@@ -14,10 +14,10 @@ export const siteConfig = {
   description:
     "www.pizzapoint.com",
   mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
+    // {
+    //   title: "Home",
+    //   href: "/",
+    // },
     {
       title: "Menus",
       href: "/menus",
@@ -26,18 +26,6 @@ export const siteConfig = {
       title: "Offers",
       href: "/offers",
     },
-    {
-      title: "Cart",
-      href: "/cart",
-    },
-    {
-      title: "Wishlist",
-      href: "/wishlist",
-    },
-    {
-      title: "Account",
-      href: "/account",
-    }
   ],
   links: {
     twitter: "https://twitter.com/shadcn",
