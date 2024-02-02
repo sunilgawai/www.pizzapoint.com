@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardContent, CardDescription, CardFooter, CardTitle } from '../ui/card'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card'
 import Image from 'next/image'
 import demoImg from '@/assets/corousel-img-1.jpg'
 import { Button } from '../ui/button'
@@ -10,9 +10,15 @@ const Product = () => {
     return (
         <Link href={"/products"}>
             <Card className='pt-2 rounded-none border-none'>
+                <CardHeader className='w-full flex flex-row items-center justify-between'>
+                    <div className="border-2">
+                        <div className="bg-green-500 w-3 h-3 rounded-full"></div>
+                    </div>
+                    Asian | Mexican
+                </CardHeader>
                 <CardContent className='w-full'>
                     <Image src={demoImg} alt='demo' className='hover:animate-in' />
-                    <CardTitle className='py-3 font-semibold text-base'>
+                    <CardTitle className='py-2 font-semibold text-base'>
                         This is a pizza.
                     </CardTitle>
                     <CardDescription className='font-normal text-base'>
