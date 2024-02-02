@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/common/site-header"
 import { TailwindIndicator } from "@/components/common/tailwind-indicator"
 import { ThemeProvider } from "@/components/common/theme-provider"
+import MainCarousel from "@/components/main-carousel"
 export const vieport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
@@ -48,7 +49,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />
-              <div className="flex-1">{children}</div>
+              <div className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+                <div className="grid place-items-center gap-2">
+                  <MainCarousel />
+                </div>
+                {children}
+              </div>
             </div>
             {/* <TailwindIndicator /> */}
           </ThemeProvider>
