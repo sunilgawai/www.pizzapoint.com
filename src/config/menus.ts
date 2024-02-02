@@ -1,5 +1,5 @@
 import { Archive, ArchiveX, Inbox, Send, Trash2, File, LucideIcon } from 'lucide-react';
-
+import pizzaIcon from "@/assets/pizza.png"
 export const menus: {
     title: string
     label?: string
