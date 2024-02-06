@@ -15,9 +15,10 @@ import Image from "next/image"
 
 const MainCarousel = () => {
     return (
-        <Carousel className="w-full">
-            <CarouselContent className="md:basis-1/2 lg:basis-1/2">
-                {/* {Array.from({ length: 5 }).map((_, index) => (
+        <div className="grid place-items-center gap-2">
+            <Carousel className="w-full">
+                <CarouselContent className="md:basis-1/2 lg:basis-1/2">
+                    {/* {Array.from({ length: 5 }).map((_, index) => (
                     <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
                         <div className="p-1">
                             <Card>
@@ -28,52 +29,53 @@ const MainCarousel = () => {
                         </div>
                     </CarouselItem>
                 ))} */}
-                <CarouselItem className="pl-1">
-                    <div className="p-1 flex flex-row items-center justify-around">
-                        <Image className="w-[400px]" src={carouselImag1} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag2} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag3} alt="img1" />
-                    </div>
-                </CarouselItem>
-                <CarouselItem className="pl-1">
-                    <div className="p-1 flex flex-row items-center justify-around">
-                        <Image className="w-[400px]" src={carouselImag1} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag2} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag3} alt="img1" />
-                    </div>
-                </CarouselItem>
-                <CarouselItem className="pl-1">
-                    <div className="p-1 flex flex-row items-center justify-around">
-                        <Image className="w-[400px]" src={carouselImag1} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag2} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag3} alt="img1" />
-                    </div>
-                </CarouselItem>
-                <CarouselItem className="pl-1">
-                    <div className="p-1 flex flex-row items-center justify-around">
-                        <Image className="w-[400px]" src={carouselImag1} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag2} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag3} alt="img1" />
-                    </div>
-                </CarouselItem>
-                <CarouselItem className="pl-1">
-                    <div className="p-1 flex flex-row items-center justify-around">
-                        <Image className="w-[400px]" src={carouselImag1} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag2} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag3} alt="img1" />
-                    </div>
-                </CarouselItem>
-                <CarouselItem className="pl-1">
-                    <div className="p-1 flex flex-row items-center justify-around">
-                        <Image className="w-[400px]" src={carouselImag1} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag2} alt="img1" />
-                        <Image className="w-[400px]" src={carouselImag3} alt="img1" />
-                    </div>
-                </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-        </Carousel>
+                    <CarouselItem className="pl-1">
+                        <div className="p-1 flex flex-row items-center justify-around">
+                            <Image className="w-[400px]" src={carouselImag1} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag2} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag3} alt="img1" />
+                        </div>
+                    </CarouselItem>
+                    <CarouselItem className="pl-1">
+                        <div className="p-1 flex flex-row items-center justify-around">
+                            <Image className="w-[400px]" src={carouselImag1} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag2} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag3} alt="img1" />
+                        </div>
+                    </CarouselItem>
+                    <CarouselItem className="pl-1">
+                        <div className="p-1 flex flex-row items-center justify-around">
+                            <Image className="w-[400px]" src={carouselImag1} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag2} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag3} alt="img1" />
+                        </div>
+                    </CarouselItem>
+                    <CarouselItem className="pl-1">
+                        <div className="p-1 flex flex-row items-center justify-around">
+                            <Image className="w-[400px]" src={carouselImag1} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag2} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag3} alt="img1" />
+                        </div>
+                    </CarouselItem>
+                    <CarouselItem className="pl-1">
+                        <div className="p-1 flex flex-row items-center justify-around">
+                            <Image className="w-[400px]" src={carouselImag1} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag2} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag3} alt="img1" />
+                        </div>
+                    </CarouselItem>
+                    <CarouselItem className="pl-1">
+                        <div className="p-1 flex flex-row items-center justify-around">
+                            <Image className="w-[400px]" src={carouselImag1} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag2} alt="img1" />
+                            <Image className="w-[400px]" src={carouselImag3} alt="img1" />
+                        </div>
+                    </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+            </Carousel>
+        </div>
     )
 }
 
