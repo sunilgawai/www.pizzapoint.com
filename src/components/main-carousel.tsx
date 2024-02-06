@@ -16,6 +16,7 @@ import Image from "next/image"
 const MainCarousel = () => {
     return (
         <div className="grid place-items-center gap-2">
+            <h1 className="text-2xl font-serif mb-2">Enjoy our special meal</h1>
             <Carousel className="w-full">
                 <CarouselContent className="md:basis-1/2 lg:basis-1/2">
                     {/* {Array.from({ length: 5 }).map((_, index) => (
