@@ -3,10 +3,11 @@ import { Separator } from '@/components/ui/separator';
 import React from 'react'
 import { FcLeft } from 'react-icons/fc';
 import Cart from '../../components/user/cart';
+import Saved from '@/components/user/saved';
 
 const CartPage = () => {
     return (
-        <div className='container h-screen py-4'>
+        <div className='container h-screen py-4 px-12'>
             <div className="flex items-center justify-between my-3">
                 <span className="flex items-center">
                     <h1 className="font-semibold text-xl mr-2">
@@ -29,11 +30,8 @@ const CartPage = () => {
 
             <Separator className='my-4' />
 
-            <div>
-                <h1 className="font-semibold">Your Saved For Later Items(1 Item)</h1>
-                <div className="flex-1 h-40 bg-gray-300"></div>
-            </div>
-
+            <h1 className="font-semibold">Your Saved For Later Items(1 Item)</h1>
+            <Saved />
             <Separator className='my-4' />
 
             <div>
