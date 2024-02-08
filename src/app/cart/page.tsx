@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import React from 'react'
 import { FcLeft } from 'react-icons/fc';
+import Cart from '../../components/user/cart';
 
 const CartPage = () => {
     return (
@@ -20,7 +21,7 @@ const CartPage = () => {
                     <Button variant="secondary" className='bg-green-600 uppercase' size="sm">go to checkout</Button>
                 </div>
             </div>
-            <div className="flex-1 h-40 bg-gray-300"></div>
+            <Cart />
             <div className="flex items-center gap-4 justify-between my-3">
                 <Button variant="link" size="sm"><FcLeft className='mr-3' /> Shop More</Button>
                 <Button variant="secondary" className='bg-green-600 uppercase' size="sm">go to checkout</Button>
