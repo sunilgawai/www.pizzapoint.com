@@ -9,11 +9,11 @@ const CartPage = () => {
         <div className='container h-screen py-4'>
             <div className="flex items-center justify-between my-3">
                 <span className="flex items-center">
-                    <h1 className="font-semibold text-medium mr-2">
+                    <h1 className="font-semibold text-xl mr-2">
                         Shopping Bag
                     </h1>
-                    <p className="text-base">
-                        your bag contains {1} item and comes to a total of $700
+                    <p className="text-lg">
+                        your bag contains {1} item and comes to a total of <span className="underline underline-offset-4">$700</span>
                     </p>
                 </span>
                 <div className="flex items-center gap-4">
