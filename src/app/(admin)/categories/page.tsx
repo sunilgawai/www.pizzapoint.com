@@ -19,7 +19,7 @@ const CategoriesPage = () => {
           {/* Breadcrumb  */}
           <BreadCrumb items={breadcrumbItems} />
           <div className="hidden md:flex items-center space-x-2">
-            <Button onClick={() => router.push("/categories/1")} className='text-md'>
+            <Button onClick={() => router.push("/categories/new")} className='text-md'>
               <Plus className='mr-2' />
               New Category
             </Button>

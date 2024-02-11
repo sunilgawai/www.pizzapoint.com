@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { LucideIcon, LayoutDashboardIcon, Settings, Notebook, User2, MenuIcon, ShoppingBag, UsersRoundIcon, ListOrdered, LockIcon } from "lucide-react"
+import { LucideIcon, LayoutDashboardIcon, Settings, Notebook, User2, MenuIcon, ToyBrickIcon, ShoppingBag, UsersRoundIcon, ListOrdered, LockIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
@@ -47,6 +47,13 @@ const links: ILinks[] = [
         href: "/categories",
         label: "128",
         icon: MenuIcon,
+        variant: "ghost",
+    },
+    {
+        title: "Menu Background",
+        href: "/background",
+        label: "4",
+        icon: ToyBrickIcon,
         variant: "ghost",
     },
     {

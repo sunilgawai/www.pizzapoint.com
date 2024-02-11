@@ -1,8 +1,5 @@
 import React from 'react'
 import { Separator } from '../ui/separator';
-import CartItem from './cart-item';
-import { Button } from '../ui/button';
-import { FcPlus } from 'react-icons/fc';
 import SavedItem from './saved-item';
 
 const Saved = () => {
